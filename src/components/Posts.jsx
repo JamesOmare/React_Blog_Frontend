@@ -1,38 +1,80 @@
-// const posts = [
-//     {
-//         title: "What is SaaS? Software as a Service Explained",
-//         desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people.",
-//         img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-//         date: "Jan 4 2022",
-//         href: "/"
-//     },
-//     {
-//         title: "A Quick Guide to WordPress Hosting",
-//         desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations.",
-//         img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-//         date: "Jan 4 2022",
-//         href: "/"
-//     },
-//     {
-//         title: "7 Promising VS Code Extensions Introduced in 2022",
-//         desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks.",
-//         img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-//         date: "Jan 4 2022",
-//         href: "/"
-//     },
-//     {
-//         title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-//         desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational.",
-//         img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-//         date: "Jan 4 2022",
-//         href: "/"
-//     }
-// ]
-
-
 const Posts = (props) => {
     const { posts } = props
-    if( !posts || posts.length === 0) return <p>Can not find any posts, sorry</p>
+    if( !posts || posts.length === 0) return(
+    // <div class="block rounded-lg bg-white text-center shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+    //     <div
+    //         class="border-b-2 border-neutral-100 px-6 py-3 dark:border-neutral-600 dark:text-neutral-50">
+    //         No Posts Available
+    //     </div>
+    //     <div class="p-6">
+    //         <h5
+    //         class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+    //         No Posts Found
+    //         </h5>
+    //         <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+    //         Cannot find any posts Sorry!
+    //         </p>
+    //         <button
+    //         type="button"
+    //         class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+    //         data-te-ripple-init
+    //         data-te-ripple-color="light">
+    //         Retry
+    //         </button>
+    //     </div>
+    //     <div class="border-t-2 border-neutral-100 px-6 py-3 dark:border-neutral-600 dark:text-neutral-50"></div>
+    // </div>
+    <div className="bg-white">
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+            aria-hidden="true"
+          >
+            <circle cx={512} cy={512} r={512} fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fillOpacity="0.7" />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              No Posts Available
+              <br />
+              Login or Register to create Posts.
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Cannot find any posts Sorry!
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <a
+                href="register"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Register
+              </a>
+              <a href="login" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                Login <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+          {/* <div className="relative mt-16 h-80 lg:mt-8">
+            <img
+              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              alt="App screenshot"
+              width={1824}
+              height={1080}
+            />
+          </div> */}
+        </div>
+      </div>
+    </div>
+        
+    )
     return (
         <section className="py-32">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
